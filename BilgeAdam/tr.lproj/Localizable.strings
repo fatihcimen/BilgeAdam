@@ -1,0 +1,15 @@
+/* 
+  Localizable.strings
+  BilgeAdam
+
+  Created by Fatih Çimen on 3.03.2018.
+  Copyright © 2018 Fatih Çimen. All rights reserved.
+*/
+
+// MARK: - Errors
+"jsonErrorLeague" = "Lig oluşturulamadı";
+"jsonErrorRounds" = "Haftalar oluşturulamadı";
+"jsonErrorMatches" = "Maçlar oluşturulamadı";
+"jsonErrorTeam" = "Takımları oluşturulamadı";
+"noInternetConnection" = "İnternet bağlantısı yok";
+

@@ -1,0 +1,15 @@
+
+/* Class = "UIViewController"; title = "Premier League"; ObjectID = "BYZ-38-t0r"; */
+"BYZ-38-t0r.title" = "Premier League";
+
+/* Class = "UINavigationItem"; title = "Premier League"; ObjectID = "MBE-yV-DsZ"; */
+"MBE-yV-DsZ.title" = "Premier League";
+
+/* Class = "UILabel"; text = "Machester \nUnited"; ObjectID = "RWn-x1-wpp"; */
+"RWn-x1-wpp.text" = "Machester \nUnited";
+
+/* Class = "UILabel"; text = "0:0"; ObjectID = "VHD-9X-NYr"; */
+"VHD-9X-NYr.text" = "0:0";
+
+/* Class = "UILabel"; text = "Machester \nUnited"; ObjectID = "oeh-kY-X9y"; */
+"oeh-kY-X9y.text" = "Machester \nUnited";
