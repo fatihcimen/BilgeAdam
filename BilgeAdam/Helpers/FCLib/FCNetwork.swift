@@ -129,10 +129,7 @@ class FCNetwork {
             return nil
         }
         
-        let iconURL = "http://fatihcimen.com/bilgeadam/icons/\(code).png"
-        let url = URL(string: iconURL)
-        
-        let team = Team(key: key, name: name, code: code, iconURL: url)
+        let team = Team(key: key, name: name, code: code)
         
         return team
     }

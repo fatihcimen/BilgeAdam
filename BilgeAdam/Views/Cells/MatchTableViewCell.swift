@@ -22,9 +22,7 @@ class MatchTableViewCell: UITableViewCell {
             
             //Home Team
             homeTeamNameLabel.text = match.homeTeam.name
-            
-            let homeTeamBadgeURL = generateTeamBadgeURL(code: match.homeTeam.code)
-            homeTeamBadgeImageView.kf.setImage(with: homeTeamBadgeURL)
+            homeTeamBadgeImageView.kf.setImage(with: match.homeTeam.iconURL)
             
             //Score Text
             let score = getScoreText(homeScore: match.homeScore, awayScore: match.awayScore)
@@ -32,9 +30,7 @@ class MatchTableViewCell: UITableViewCell {
             
             //Away Team
             awayTeamNameLabel.text = match.awayTeam.name
-            
-            let awayTeamBadgeURL = generateTeamBadgeURL(code: match.awayTeam.code)
-            awayTeamBadgeImageView.kf.setImage(with: awayTeamBadgeURL)
+            awayTeamBadgeImageView.kf.setImage(with: match.awayTeam.iconURL)
         }
     }
 
@@ -62,9 +58,5 @@ class MatchTableViewCell: UITableViewCell {
         }
         
         return score
-    }
-    
-    private func generateTeamBadgeURL(code: String) -> URL {
-        return URL(string: "http://fatihcimen.com/bilgeadam/badges/\(code).png")!
     }
 }
