@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import MBProgressHUD
 
 func errorMessage(message: String, duration: Double = 2.5) {
     if let rootView = UIApplication.shared.windows[0].rootViewController?.view {
@@ -14,6 +15,25 @@ func errorMessage(message: String, duration: Double = 2.5) {
         let textColor: UIColor = .white
         
         rootView.statusBarAlert(title: message, duration: duration, barStyle: .navigationBarNotification, notificationAnimationStyle: .top, backgroundColor: backgroundColor, textColor: textColor)
+    }
+}
+
+// Progress Indicator
+func showIndicator() {
+    if let rootView = UIApplication.shared.windows[0].rootViewController?.view {
+                
+        let indicator = MBProgressHUD.showAdded(to: rootView, animated: true)
+        indicator.bezelView.style = .solidColor
+        indicator.bezelView.backgroundColor = .clear
+        indicator.isUserInteractionEnabled = true
+        indicator.mode = .customView
+        indicator.customView = FCProgressView(frame: CGRect(x: 0, y: 0, width: 80, height: 80))
+    }
+}
+
+func hideIndicator() {
+    if let rootView = UIApplication.shared.windows[0].rootViewController?.view {
+        MBProgressHUD.hide(for: rootView, animated: true)
     }
 }
 

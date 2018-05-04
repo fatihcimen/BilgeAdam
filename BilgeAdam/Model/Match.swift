@@ -6,21 +6,27 @@
 //  Copyright © 2018 Fatih Çimen. All rights reserved.
 //
 
-import Foundation
-
-class Match {
+class Match: Decodable {
     
-    var date: Date!
-    var homeScore: Int?
-    var awayScore: Int?
-    var homeTeam: Team!
-    var awayTeam: Team!
-
-    init(date: Date!, homeScore: Int?, awayScore: Int?, homeTeam: Team!, awayTeam: Team!) {
+    enum CodingKeys: String, CodingKey {
+        case teamHome = "team1"
+        case teamAway = "team2"
+        case scoreHome = "score1"
+        case scoreAway = "score2"
+        case date
+    }
+    
+    var date: String
+    var teamHome: Team
+    var teamAway: Team
+    var scoreHome: Int?
+    var scoreAway: Int?
+    
+    init(date: String, teamHome: Team, teamAway: Team, scoreHome: Int, scoreAway: Int) {
         self.date = date
-        self.homeScore = homeScore
-        self.awayScore = awayScore
-        self.homeTeam = homeTeam
-        self.awayTeam = awayTeam
+        self.teamHome = teamHome
+        self.teamAway = teamAway
+        self.scoreHome = scoreHome
+        self.scoreAway = scoreAway
     }
 }

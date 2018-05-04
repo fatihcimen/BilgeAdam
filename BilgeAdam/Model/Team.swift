@@ -8,21 +8,20 @@
 
 import Foundation
 
-class Team {
+class Team: Decodable {
     
-    var key: String!
-    var name: String!
-    var code: String!
-    var iconURL: URL!
-
-    init(key: String!, name: String!, code: String!) {
+    var key: String
+    var name: String
+    var code: String
+    var iconURL: URL? {
+        get {
+            return URL(string: "http://fatihcimen.com/bilgeadam/badges/\(self.code).png")!
+        }
+    }
+    
+    init(key: String, name: String, code: String) {
         self.key = key
         self.name = name
         self.code = code
-        self.iconURL = generateTeamBadgeURL(code: code)
-    }
-    
-    private func generateTeamBadgeURL(code: String) -> URL {
-        return URL(string: "http://fatihcimen.com/bilgeadam/badges/\(code).png")!
     }
 }

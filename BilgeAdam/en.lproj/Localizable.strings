@@ -7,9 +7,5 @@
 */
 
 // MARK: - Errors
-"jsonErrorLeague" = "League can not created";
-"jsonErrorRounds" = "Rounds can not created";
-"jsonErrorMatches" = "Matches can not created";
-"jsonErrorTeam" = "Team can not created";
 "noInternetConnection" = "No internet connection";
 

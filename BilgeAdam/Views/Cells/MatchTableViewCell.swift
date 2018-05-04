@@ -21,16 +21,16 @@ class MatchTableViewCell: UITableViewCell {
         didSet {
             
             //Home Team
-            homeTeamNameLabel.text = match.homeTeam.name
-            homeTeamBadgeImageView.kf.setImage(with: match.homeTeam.iconURL)
+            homeTeamNameLabel.text = match.teamHome.name
+            homeTeamBadgeImageView.kf.setImage(with: match.teamHome.iconURL)
             
             //Score Text
-            let score = getScoreText(homeScore: match.homeScore, awayScore: match.awayScore)
+            let score = getScoreText(homeScore: match.scoreHome, awayScore: match.scoreAway)
             scoreLabel.text = score
             
             //Away Team
-            awayTeamNameLabel.text = match.awayTeam.name
-            awayTeamBadgeImageView.kf.setImage(with: match.awayTeam.iconURL)
+            awayTeamNameLabel.text = match.teamAway.name
+            awayTeamBadgeImageView.kf.setImage(with: match.teamAway.iconURL)
         }
     }
 

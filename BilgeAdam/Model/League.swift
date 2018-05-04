@@ -6,12 +6,12 @@
 //  Copyright © 2018 Fatih Çimen. All rights reserved.
 //
 
-class League {
+class League: Decodable {
     
-    var name: String!
-    var rounds: [Round]!
-
-    init(name: String!, rounds: [Round]!) {
+    var name: String
+    var rounds: [Round]
+    
+    init(name: String, rounds: [Round]) {
         self.name = name
         self.rounds = rounds
     }

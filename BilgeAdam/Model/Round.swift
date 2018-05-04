@@ -6,12 +6,12 @@
 //  Copyright © 2018 Fatih Çimen. All rights reserved.
 //
 
-class Round {
+class Round: Decodable {
     
-    var name: String!
-    var matches: [Match]!
-
-    init(name: String!, matches: [Match]!) {
+    var name: String
+    var matches: [Match]
+    
+    init(name: String, matches: [Match]) {
         self.name = name
         self.matches = matches
     }

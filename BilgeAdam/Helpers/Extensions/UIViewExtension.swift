@@ -31,18 +31,4 @@ extension UIView {
         
         notification.display(withMessage: title, forDuration: duration)
     }
-    
-    // Progress Indicator
-    func showIndicator() {
-        let indicator = MBProgressHUD.showAdded(to: self, animated: true)
-        indicator.bezelView.style = .solidColor
-        indicator.bezelView.backgroundColor = .clear
-        indicator.isUserInteractionEnabled = true
-        indicator.mode = .customView
-        indicator.customView = FCProgressView(frame: CGRect(x: 0, y: 0, width: 80, height: 80))
-    }
-    
-    func hideIndicator() {
-        MBProgressHUD.hide(for: self, animated: true)
-    }
 }

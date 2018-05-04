@@ -40,17 +40,14 @@ class MatchdayViewController: UIViewController {
     }
     
     @objc private func getLeagueData() {
-        self.view.showIndicator()
-        FCNetwork.getMatches() {
+        FCNetwork.getJSON(type: League.self) {
             league in
-            
-            if let league = league {
-                self.title = league.name
-                self.rounds = league.rounds
-            }
-            
-            self.view.hideIndicator()
             self.refreshControl.endRefreshing()
+            
+            guard let league = league else { return }
+            
+            self.title = league.name
+            self.rounds = league.rounds
         }
     }
     

@@ -1,7 +1,7 @@
 PODS:
-  - Alamofire (4.6.0)
+  - Alamofire (4.7.2)
   - CWStatusBarNotification (2.3.5)
-  - Kingfisher (4.6.2)
+  - Kingfisher (4.7.0)
   - MBProgressHUD (1.1.0)
 
 DEPENDENCIES:
@@ -10,21 +10,27 @@ DEPENDENCIES:
   - Kingfisher
   - MBProgressHUD
 
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - CWStatusBarNotification
+    - Kingfisher
+    - MBProgressHUD
+
 EXTERNAL SOURCES:
   Alamofire:
     :git: https://github.com/Alamofire/Alamofire.git
 
 CHECKOUT OPTIONS:
   Alamofire:
-    :commit: 4d30762a0080b796900e308eda9240c51b293f63
+    :commit: 2fb881a1702cb1976c36192aceb54dcedab6fdc2
     :git: https://github.com/Alamofire/Alamofire.git
 
 SPEC CHECKSUMS:
-  Alamofire: 0dda98a0ed7eec4bdcd5fe3cdd35fcd2b3022825
+  Alamofire: e4fa87002c137ba2d8d634d2c51fabcda0d5c223
   CWStatusBarNotification: 3d2738b25c3207f60cc50201388d3c96182545ff
-  Kingfisher: 55b9c395bf8d3949676ad3861111923990ab68cf
+  Kingfisher: da6b005aa96d37698e3e4f1ccfe96a5b9bbf27d6
   MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
 
-PODFILE CHECKSUM: 12cb0e6b031786e01b353df0d59743d4141f675b
+PODFILE CHECKSUM: 6c832742f3f2492af071725b2d7d27689098dfd2
 
-COCOAPODS: 1.4.0
+COCOAPODS: 1.5.0

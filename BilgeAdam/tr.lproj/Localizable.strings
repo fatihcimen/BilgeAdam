@@ -7,9 +7,5 @@
 */
 
 // MARK: - Errors
-"jsonErrorLeague" = "Lig oluşturulamadı";
-"jsonErrorRounds" = "Haftalar oluşturulamadı";
-"jsonErrorMatches" = "Maçlar oluşturulamadı";
-"jsonErrorTeam" = "Takımları oluşturulamadı";
 "noInternetConnection" = "İnternet bağlantısı yok";
 
