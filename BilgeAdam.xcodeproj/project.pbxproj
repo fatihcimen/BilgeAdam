@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		296EB1B887600B0187F4A606 /* Pods_BilgeAdam.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 693E3E360F21402012208164 /* Pods_BilgeAdam.framework */; };
+		FE051A87214FA97B00E95BD6 /* UINavigationControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE051A86214FA97B00E95BD6 /* UINavigationControllerExtension.swift */; };
 		FE1C6F34209C91F500564D18 /* FCNetworkStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE1C6F33209C91F500564D18 /* FCNetworkStatus.swift */; };
 		FE5A8A46204A99C0000644FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE5A8A45204A99C0000644FF /* AppDelegate.swift */; };
 		FE5A8A4B204A99C0000644FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE5A8A49204A99C0000644FF /* Main.storyboard */; };
@@ -34,6 +35,7 @@
 		2FBFE75BC8C0E56120F31FFB /* Pods-BilgeAdam.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BilgeAdam.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BilgeAdam/Pods-BilgeAdam.debug.xcconfig"; sourceTree = "<group>"; };
 		693E3E360F21402012208164 /* Pods_BilgeAdam.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BilgeAdam.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		91315420C0BAAEE22B8D547E /* Pods-BilgeAdam.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BilgeAdam.release.xcconfig"; path = "Pods/Target Support Files/Pods-BilgeAdam/Pods-BilgeAdam.release.xcconfig"; sourceTree = "<group>"; };
+		FE051A86214FA97B00E95BD6 /* UINavigationControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINavigationControllerExtension.swift; sourceTree = "<group>"; };
 		FE1C6F33209C91F500564D18 /* FCNetworkStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FCNetworkStatus.swift; sourceTree = "<group>"; };
 		FE5A8A42204A99C0000644FF /* BilgeAdam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BilgeAdam.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE5A8A45204A99C0000644FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -150,6 +152,7 @@
 			children = (
 				FE5A8A77204AB47E000644FF /* UIViewExtension.swift */,
 				FE5A8A7E204ABB2F000644FF /* StringExtension.swift */,
+				FE051A86214FA97B00E95BD6 /* UINavigationControllerExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -226,6 +229,7 @@
 				TargetAttributes = {
 					FE5A8A41204A99C0000644FF = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 1000;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -315,6 +319,7 @@
 			files = (
 				FE5A8A72204AB069000644FF /* Team.swift in Sources */,
 				FE5A8A67204AA86D000644FF /* MatchdayViewController.swift in Sources */,
+				FE051A87214FA97B00E95BD6 /* UINavigationControllerExtension.swift in Sources */,
 				FE5A8A76204AB424000644FF /* FCGlobalHelper.swift in Sources */,
 				FE5A8A46204A99C0000644FF /* AppDelegate.swift in Sources */,
 				FE5A8A70204AB024000644FF /* Match.swift in Sources */,
@@ -490,7 +495,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cimenfatih.BilgeAdam;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -507,7 +512,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cimenfatih.BilgeAdam;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

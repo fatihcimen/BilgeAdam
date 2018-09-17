@@ -101,7 +101,7 @@ final class ActivityIndicator: Indicator {
 
     func startAnimatingView() {
         animatingCount += 1
-        // Alrady animating
+        // Already animating
         if animatingCount == 1 {
             #if os(macOS)
                 activityIndicatorView.startAnimation(nil)
@@ -133,9 +133,9 @@ final class ActivityIndicator: Indicator {
             #if os(tvOS)
                 let indicatorStyle = UIActivityIndicatorViewStyle.white
             #else
-                let indicatorStyle = UIActivityIndicatorViewStyle.gray
+                let indicatorStyle = UIActivityIndicatorView.Style.gray
             #endif
-            activityIndicatorView = UIActivityIndicatorView(activityIndicatorStyle:indicatorStyle)
+            activityIndicatorView = UIActivityIndicatorView(style:indicatorStyle)
             activityIndicatorView.autoresizingMask = [.flexibleLeftMargin, .flexibleRightMargin, .flexibleBottomMargin, .flexibleTopMargin]
         #endif
     }
